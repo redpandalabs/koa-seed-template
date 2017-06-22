@@ -28,9 +28,7 @@ const userSchema = new Schema({
     registrationTime: {
         type: Number,
         default: Date.now
-    },
-    rewardCreditAPI: String,
-    authorizationToken: String
+    }
 }, {
     versionKey: false
 })
