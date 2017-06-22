@@ -59,7 +59,8 @@ email._buildEmailData = (templateType, receivers, params) => { //eslint-disable-
     const content = _.isEmpty(params) ? new helper.Content('text/html', emailContent) : new helper.Content('text/html', _.head(emailContent))
 
     mail.addContent(content)
-    mail.setFrom({email: 'surveys@kokonetworks.com', name: 'Koko Surveys'})
+    // 
+    mail.setFrom({email: '', name: ''})
     mail.setSubject(emailData.subject)
     mail.addPersonalization(personalization)
 

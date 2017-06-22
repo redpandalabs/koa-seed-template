@@ -47,6 +47,6 @@ function registerJob(frequency, job) { //eslint-disable-line
 // -------------------------------------------------------------------
 // Register new jobs here
 
-registerJob('0 0 0 * * *', jobs.TEST_SCHDEULER) // this will run everyday at 00:00a.m
+registerJob('*/2 * * * * *', jobs.TEST_SCHDEULER) // this will run every 2 seconds
 
 //--------------------------------------------------------------------
